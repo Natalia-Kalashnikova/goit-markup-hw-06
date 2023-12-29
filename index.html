@@ -19,14 +19,15 @@
   </head>
 
   <body>
-    <!-- Page header -->
+    <!---------------- Page header ---------------->
     <header class="header">
-      <!-- Navigation menu -->
+      <!-------------- Navigation menu------------->
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo-link" href="./index.html"
             >Web<span class="logo-accent">Studio</span></a
           >
+
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link current" href="./index.html">Studio</a>
@@ -53,12 +54,17 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
-    <!-- Unique content -->
+    <!---------------- Unique content ------------->
     <main>
-      <!-- Hero -->
+      <!-------------- Hero ----------------------->
       <section class="section-hero section">
         <div class="container">
           <h1 class="section-hero-title">
@@ -70,7 +76,7 @@
         </div>
       </section>
 
-      <!-- Our goal  -->
+      <!-------------- Our goal ------------------->
       <section class="section-goal section">
         <div class="container">
           <h2 class="visually-hidden">Our goal</h2>
@@ -127,7 +133,7 @@
         </div>
       </section>
 
-      <!-- Our Team  -->
+      <!-------------- Our Team ------------------->
       <section class="section-team section">
         <div class="container">
           <h2 class="section-team-title">Our Team</h2>
@@ -135,9 +141,14 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
-                src="./images/mark.jpg"
+                srcset="
+                  ./images/team-img-1-1.jpg 1x,
+                  ./images/team-img-1-2.jpg 2x
+                "
+                src="./images/team-img-1-1.jpg"
                 alt="smiling man with a beard in a blue shirt"
                 width="264" />
+
               <div class="tim">
                 <h3 class="section-team-subtitle">Mark Guerrero</h3>
                 <p class="section-team-text">Product Designer</p>
@@ -197,7 +208,11 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
-                src="./images/tom.jpg"
+                srcset="
+                  ./images/team-img-2-1.jpg 1x,
+                  ./images/team-img-2-2.jpg 2x
+                "
+                src="./images/team-img-2-1.jpg"
                 alt="smiling man with a beard in a blue shirt looks to the right"
                 width="264" />
               <div class="tim">
@@ -258,7 +273,11 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
-                src="./images/camila.jpg"
+                srcset="
+                  ./images/team-img-3-1.jpg 1x,
+                  ./images/team-img-3-2.jpg 2x
+                "
+                src="./images/team-img-3-1.jpg"
                 alt="smiling girl with long hair in a pink sweater"
                 width="264" />
               <div class="tim">
@@ -319,7 +338,11 @@
             <li class="section-team-item">
               <img
                 class="section-team-img"
-                src="./images/daniel.jpg"
+                srcset="
+                  ./images/team-img-4-1.jpg 1x,
+                  ./images/team-img-4-2.jpg 2x
+                "
+                src="./images/team-img-4-1.jpg"
                 alt="smiling man with a beard in a gray t-shirt"
                 width="264" />
               <div class="tim">
@@ -381,18 +404,41 @@
         </div>
       </section>
 
-      <!--Our Portfolio-->
+      <!-------------- Our Portfolio -------------->
       <section class="section-portfolio section">
         <div class="container">
           <h2 class="section-portfolio-title">Our Portfolio</h2>
           <ul class="section-portfolio-list">
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/banking-app.jpg"
-                  alt="One large and six small screenshots of the bank’s mobile application in purple tones."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-1-desktop-1.jpg 1x,
+                      ./images/portfolio-img-1-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-1-tablet-1.jpg 1x,
+                      ./images/portfolio-img-1-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-1-mobile-1.jpg 1x,
+                      ./images/portfolio-img-1-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-1-mobile-1.jpg"
+                    alt="One large and six small screenshots of the bank’s mobile application in purple tones."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -406,11 +452,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/cashless-payment.jpg"
-                  alt="A hand holds a mobile phone that reads a QR code from another device."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-2-desktop-1.jpg 1x,
+                      ./images/portfolio-img-2-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-2-tablet-1.jpg 1x,
+                      ./images/portfolio-img-2-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-2-mobile-1.jpg 1x,
+                      ./images/portfolio-img-2-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-2-mobile-1.jpg"
+                    alt="A hand holds a mobile phone that reads a QR code from another device."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -424,11 +493,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/meditation-app.jpg"
-                  alt="laptop with a monitor turned on with a colorful splash screen and a mobile phone screen with a colorful splash screen."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-3-desktop-1.jpg 1x,
+                      ./images/portfolio-img-3-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-3-tablet-1.jpg 1x,
+                      ./images/portfolio-img-3-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-3-mobile-1.jpg 1x,
+                      ./images/portfolio-img-3-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-3-mobile-1.jpg"
+                    alt="laptop with a monitor turned on with a colorful splash screen and a mobile phone screen with a colorful splash screen."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -442,11 +534,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/taxi-service.jpg"
-                  alt="A car cabin with the driver's hands on the steering wheel, a holder with a switched-on mobile phone on the windshield."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-4-desktop-1.jpg 1x,
+                      ./images/portfolio-img-4-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-4-tablet-1.jpg 1x,
+                      ./images/portfolio-img-4-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-4-mobile-1.jpg 1x,
+                      ./images/portfolio-img-4-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-4-mobile-1.jpg"
+                    alt="A car cabin with the driver's hands on the steering wheel, a holder with a switched-on mobile phone on the windshield."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -460,11 +575,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/screen-illustrations.jpg"
-                  alt="A photo of a mobile phone screen with desktop wallpaper, next to four screenshots with wallpaper."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-5-desktop-1.jpg 1x,
+                      ./images/portfolio-img-5-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-5-tablet-1.jpg 1x,
+                      ./images/portfolio-img-5-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-5-mobile-1.jpg 1x,
+                      ./images/portfolio-img-5-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-5-mobile-1.jpg"
+                    alt="A photo of a mobile phone screen with desktop wallpaper, next to four screenshots with wallpaper."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -478,11 +616,34 @@
             </li>
             <li class="section-portfolio-item">
               <div class="app-box">
-                <img
-                  class="section-portfolio-img"
-                  src="./images/online-courses.jpg"
-                  alt="A smiling girl in glasses, a gray hat, an orange sweater and headphones looks at the screen of a mobile phone."
-                  width="360" />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-img-6-desktop-1.jpg 1x,
+                      ./images/portfolio-img-6-desktop-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio-img-6-tablet-1.jpg 1x,
+                      ./images/portfolio-img-6-tablet-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio-img-6-mobile-1.jpg 1x,
+                      ./images/portfolio-img-6-mobile-2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <img
+                    class="section-portfolio-img"
+                    src="./images/portfolio-img-6-mobile-1.jpg"
+                    alt="A smiling girl in glasses, a gray hat, an orange sweater and headphones looks at the screen of a mobile phone."
+                    width="360" />
+                </picture>
                 <p class="app-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -499,7 +660,7 @@
       </section>
     </main>
 
-    <!--Footer-->
+    <!---------------- Footer --------------------->
     <footer class="footer">
       <div class="footer-box container">
         <div class="logo-box">
@@ -588,7 +749,7 @@
 
     <!-- ===================Modal======================== -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -655,7 +816,7 @@
               placeholder="Text input"></textarea>
           </div>
 
-          <!-- Checkbox -->
+          <!------------------ Checkbox ------------------------>
 
           <div class="agreement">
             <input
@@ -671,8 +832,10 @@
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-link" href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="modal-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
