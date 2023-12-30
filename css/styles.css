@@ -90,6 +90,13 @@ ul {
   font-weight: 500;
   align-items: center;
   display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-nav {
+    width: auto;
+  }
 }
 
 .logo-link {
@@ -118,11 +125,12 @@ ul {
   display: none;
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header-nav-list {
-    display: flex;    
+    display: flex;
+    gap: 40px;
   }
-} */
+}
 
 .header-nav-item {
   text-decoration: none;
@@ -183,9 +191,14 @@ ul {
 .heder-address {
   color: #434455;
   font-style: normal;
-  margin-left: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .heder-address {
+    display: flex;
+    gap: 40px;
+  }
+}
 .heder-address-list {
   display: flex;
   gap: 40px;
@@ -194,6 +207,10 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .heder-address-list {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -219,10 +236,6 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .heder-address-link {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
   }
 }
 
