@@ -14,6 +14,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -80,6 +84,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1158px;
 }
 
 .header-nav {
@@ -1289,6 +1294,11 @@ ul {
   pointer-events: initial;
 }
 
+.modal-mobile.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
 .modal-mobile {
   padding: 72px 24px 40px 16px;
 
@@ -1410,7 +1420,7 @@ ul {
 .mobile-socials {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 48px;
   gap: 40px;
 }
