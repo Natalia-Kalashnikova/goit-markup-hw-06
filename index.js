@@ -5,8 +5,15 @@ const mobileNavBackdrop = document.querySelector('.backdrop-mobile');
 
 sectionHeroButton.addEventListener('click', () => toggleModalVisibility(modalBackdrop));
 burgerMenuButton.addEventListener('click', () => toggleModalVisibility(mobileNavBackdrop));
+
 modalBackdrop.addEventListener('click', handleBackdropClick);
 mobileNavBackdrop.addEventListener('click', handleBackdropClick);
+
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  toggleModalVisibility(modalBackdrop); 
+});
 
 function toggleModalVisibility(element) {
   element.classList.toggle('is-open');
@@ -14,9 +21,14 @@ function toggleModalVisibility(element) {
 }
 
 function handleBackdropClick(event) {
-  const closeButton = event.target.closest('.modal-btn, .mobile-btn');
-  if (!closeButton) return;
 
-  const backdrop = closeButton.closest('.backdrop, .backdrop-mobile');
-  toggleModalVisibility(backdrop);
+  if (event.target === modalBackdrop || event.target === mobileNavBackdrop) {
+    toggleModalVisibility(event.currentTarget);
+  }
+
+    const closeButton = event.target.closest('.modal-btn, .mobile-btn, .modal-button');
+  if (closeButton) {
+    event.preventDefault(); 
+    toggleModalVisibility(event.currentTarget);
+  }
 }
