@@ -14,16 +14,16 @@ The website consists of the following sections:
 - **Navigation Menu**: Easy access to different sections of the site.
 - **Hero Section**: A prominent section with a call-to-action button that
   triggers a modal window containing the order form.
-  ![Navigation](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/tree/main/images/Screenshot_1.jpg)
+  ![Navigation](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/blob/main/images/Screenshot_1.jpg)
 - **Services Section**: A detailed description of the types of services offered
   by the web studio.
 - **Team Section**: Information about the team members and their respective
   roles.
-  ![Team](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/tree/main/images/Screenshot_2.jpg)
+  ![Team](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/blob/main/images/Screenshot_2.jpg)
 - **Portfolio**: A showcase of the web studio's past projects and achievements.
 - **Contact Section**: Contact information along with a subscription option for
   users to stay updated.
-  ![Portfolio](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/tree/main/images/Screenshot_3.jpg)
+  ![Portfolio](https://github.com/Natalia-Kalashnikova/goit-markup-hw-06/blob/main/images/Screenshot_3.jpg)
 
 ## Technologies Used
 
